@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet'/>
+
+  <link rel="stylesheet" href="css/layout.css">
+
+  <link rel="stylesheet" href="css/weather.css">
+
+  <title>Open Weather Forecast </title>
+
+</head>
+
+<body class="backGroundColorBlue" id="easter-egg">
+<div class="page-wrapper">
+  <div class="container colorWhite">
+    <div class="row">
+      <!--            <div class="column map-border">-->
+      <div class="column backGroundColor4 map-border">
+        <div class="justify-center text-align-center">
+          <h1>Open Weather API Project</h1>
+          <h2>Brought to you by Kurt Suttin</h2>
+          <h2>Used with Mapbox & OpenWeather APIs</h2>
+
+          <!-- form START -->
+
+          <form class="search-form">
+            <label for="search" class="screen-reader-text">Search</label>
+            <input id="search"
+                   type="search" class="search-input search-box search-font"
+                   placeholder="City, State or Zip Code">
+            <button id="search-btn" class="search-font search-button">Search</button>
+          </form>
+        </div>
+        <!-- form END -->
+
+        <!-- map START -->
+        <div id='map' style='width: 70rem; height:19rem;' class="map-border">
+          <!--             MAP BOX API goes here                                             -->
+        </div>
+        <!-- map END -->
+
+        <div class="column backGroundColorBlue map-border">
+          <!-- weather START -->
+          <div id='weather' class="colorWhite">
+
+            <table class="w-100 map-border backGroundColorBlue">
+              <thead>
+              <tr class="">
+                <th class="map-border">Date & Time</th>
+                <th class="map-border">Forecast</th>
+                <th class="map-border">Humidity</th>
+                <th class="map-border">Temperature</th>
+
+              </tr>
+              </thead>
+
+              <tbody id="insert-conditions" class="map-border">
+              <!--    Forecast API data goes here {...}             -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- weather END -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="confetti">
+  <img src="images/party-popper-confetti.gif" alt="confetti">
+</div>
+<script src="js/keys.js"></script>
+<!-- include jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/min-max-temps.js"></script>
+
+
+<!-- additional code here -->
+<script src="js/ent-weather-map.js"></script>
+
+
+</body>
+</html>

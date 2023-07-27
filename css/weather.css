@@ -1,0 +1,73 @@
+/*FONT START*/
+body {
+    font-family: 'Lilita One', cursive;
+}
+
+/*FONT END*/
+
+/*COLORS START */
+.colorWhite {
+    color: rgb(255, 255, 255);
+}
+
+.backGroundColorBlue {
+    background-color: #304e6f;
+}
+
+.backGroundColorGrey {
+    background-color: #5b6169;
+}
+
+/*COLORS END */
+
+/*MARGIN START*/
+.map-border {
+    /*background-color: #b499e9;*/
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+.padding-5 {
+    padding-bottom: 5px;
+}
+
+/*MARGIN END*/
+/*WIDTH SETTING START*/
+.w-100 {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/*WIDTH SETTING END*/
+
+
+/*SEARCH BAR START*/
+.text-align-center {
+    text-align: center;
+}
+
+.search-box {
+    width: 80%;
+    height: 30px;
+
+}
+
+.search-font {
+    font-family: 'Lilita One', cursive;
+}
+
+/*SEARCH END START*/
+
+.weather-icon {
+    width: 25px;
+}
+
+/*Konami code*/
+.confetti {
+    opacity: 0;
+    width: 10em;
+    aspect-ratio: 1/1;
+
+}
