@@ -272,6 +272,10 @@ function activateCheats() {
     document.body.style.backgroundImage = "url('img')";
     $easteregg.css('background-color', 'pink');
     $cofetti.css('opacity', '100%')
+    $cofetti.css({
+        'transform': 'translateY(-200%)',
+        'transition': 'transform 1s'
+    });
     let sound = new Audio('audio/grunt.mp3');
     sound.play();
     console.log("cheats activated")
