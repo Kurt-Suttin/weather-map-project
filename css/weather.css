@@ -13,6 +13,22 @@ body {
 .backGroundColorBlue {
     background-color: #304e6f;
 }
+.mainBG {
+    background-image: linear-gradient(
+            45deg,
+            hsl(241deg 26% 33%) 0%,
+            hsl(280deg 35% 37%) 10%,
+            hsl(315deg 56% 39%) 20%,
+            hsl(328deg 100% 40%) 30%,
+            hsl(342deg 100% 47%) 40%,
+            hsl(0deg 100% 50%) 50%,
+            hsl(342deg 100% 47%) 60%,
+            hsl(328deg 100% 40%) 70%,
+            hsl(315deg 56% 39%) 80%,
+            hsl(280deg 35% 37%) 90%,
+            hsl(241deg 26% 33%) 100%
+    );
+}
 
 .backGroundColorGrey {
     background-color: #5b6169;
